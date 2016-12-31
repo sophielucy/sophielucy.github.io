@@ -1,3 +1,44 @@
+body{
+	background-color: #ff7621;
+}
+
+.landing {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background-color: #ff7621;
+  background: url(../img/oranges.jpg) no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.landing .landing-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.landing .landing-body .brand-heading {
+  font-size: 40px;
+}
+.landing .landing-body .landing-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .landing {
+    height: 100%;
+    padding: 0;
+  }
+  .landing .landing-body .brand-heading {
+    font-size: 100px;
+  }
+  .landing .landing-body .landing-text {
+    font-size: 26px;
+  }
+}
+
 .btn-outline {
     background: none;
     padding: 12px 22px;
@@ -14,6 +55,42 @@
 .btn-outline-default:focus {
   border: 1px solid white;
   outline: none;
-  color: black;
+  color: #ff7621;
   background-color: white;
 }
+
+.btn-social {
+  text-transform: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.btn-social-default {
+  border: 2px solid #0743d1;
+  color: #0743d1;
+  background-color: transparent;
+}
+.btn-social-default:hover,
+.btn-social-default:focus {
+  border: 2px solid #0743d1;
+  outline: none;
+  color: #ff7621;
+  background-color: #0743d1;
+}
+a {
+  color: #0743d1;
+
+}
+a:hover,
+a:focus {
+  color: #ff7621;
+}
+
+.navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: #ff7621;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
