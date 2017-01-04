@@ -1,42 +1,46 @@
-body{
-	background-color: #ff7621;
+body {
+    background-color: #ff7621;
 }
 
 .landing {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background-color: #ff7621;
-  background: url(../img/oranges.jpg) no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background-color: #ff7621;
+    background: url(../img/oranges.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
+
 .landing .landing-body {
-  display: table-cell;
-  vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
+
 .landing .landing-body .brand-heading {
-  font-size: 40px;
+    font-size: 40px;
 }
+
 .landing .landing-body .landing-text {
-  font-size: 18px;
+    font-size: 18px;
 }
+
 @media (min-width: 768px) {
-  .landing {
-    height: 100%;
-    padding: 0;
-  }
-  .landing .landing-body .brand-heading {
-    font-size: 100px;
-  }
-  .landing .landing-body .landing-text {
-    font-size: 26px;
-  }
+    .landing {
+        height: 100%;
+        padding: 0;
+    }
+    .landing .landing-body .brand-heading {
+        font-size: 100px;
+    }
+    .landing .landing-body .landing-text {
+        font-size: 26px;
+    }
 }
 
 .btn-outline {
@@ -51,149 +55,169 @@ body{
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
 }
+
 .btn-outline-default:hover,
 .btn-outline-default:focus {
-  border: 1px solid white;
-  outline: none;
-  color: #ff7621;
-  background-color: white;
+    border: 1px solid white;
+    outline: none;
+    color: #ff7621;
+    background-color: white;
 }
 
 .btn-social {
-  text-transform: none;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
+    text-transform: none;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
 }
+
 .btn-social-default {
-  border: 2px solid #0743d1;
-  color: #0743d1;
-  background-color: transparent;
+    border: 2px solid #0743d1;
+    color: #0743d1;
+    background-color: transparent;
 }
+
 .btn-social-default:hover,
 .btn-social-default:focus {
-  border: 2px solid #0743d1;
-  outline: none;
-  color: #ff7621;
-  background-color: #0743d1;
+    border: 2px solid #0743d1;
+    outline: none;
+    color: #ff7621;
+    background-color: #0743d1;
 }
-a {
-  color: #0F2F68;
 
+a {
+    color: #0743d1;
 }
+
 a:hover,
 a:focus {
-  color: #ff7621;
+    color: #0743d1;
 }
 
 .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #ff7621;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
+}
 
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
+    margin: 0 0 15px;
+    right: 0;
 }
+
 #portfolio .portfolio-item .portfolio-link {
-  display: block;
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
 }
+
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(36,91,250, 0.9);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
+    background: rgba(36, 91, 250, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
 }
+
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
+    opacity: 1;
 }
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
-  color: white;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: white;
 }
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
+    margin-top: -12px;
 }
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-  margin: 0;
+    margin: 0;
 }
+
 #portfolio * {
-  z-index: 2;
+    z-index: 2;
 }
+
 .portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center;
 }
+
 .portfolio-modal .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
+    margin: 0;
+    font-size: 3em;
 }
+
 .portfolio-modal .modal-content img {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .portfolio-modal .modal-content .item-details {
-  margin: 30px 0;
+    margin: 30px 0;
 }
+
 .portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
 }
+
 .portfolio-modal .close-modal:hover {
-  opacity: 0.3;
+    opacity: 0.3;
 }
+
 .portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #2C3E50;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #2C3E50;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+    z-index: 1051;
 }
+
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #2C3E50;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
+    height: 75px;
+    width: 1px;
+    background-color: #2C3E50;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari and Chrome */
+    z-index: 1052;
 }
+
 .portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
+    opacity: 0;
+    display: none;
 }
