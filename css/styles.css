@@ -1,223 +1,232 @@
 body {
-    background-color: #ff7621;
-}
-
-.landing {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: white;
-    background-color: #ff7621;
-    background: url(../img/oranges.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.landing .landing-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.landing .landing-body .brand-heading {
-    font-size: 40px;
-}
-
-.landing .landing-body .landing-text {
-    font-size: 18px;
-}
-
-@media (min-width: 768px) {
-    .landing {
-        height: 100%;
-        padding: 0;
-    }
-    .landing .landing-body .brand-heading {
-        font-size: 100px;
-    }
-    .landing .landing-body .landing-text {
-        font-size: 26px;
-    }
-}
-
-.btn-outline {
-    background: none;
-    padding: 12px 22px;
-    border: 1px solid white;
-    text-transform: none;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-}
-
-.btn-outline-default:hover,
-.btn-outline-default:focus {
-    border: 1px solid white;
-    outline: none;
-    color: #ff7621;
-    background-color: white;
-}
-
-.btn-social {
-    text-transform: none;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-}
-
-.btn-social-default {
-    border: 2px solid #0743d1;
-    color: #0743d1;
-    background-color: transparent;
-}
-
-.btn-social-default:hover,
-.btn-social-default:focus {
-    border: 2px solid #0743d1;
-    outline: none;
-    color: #ff7621;
-    background-color: #0743d1;
-}
-
-a {
-    color: #0743d1;
-}
-
-a:hover,
-a:focus {
-    color: #0743d1;
-}
-
-.navbar-custom.top-nav-collapse {
+    background-color: #FF8E52;
+    margin: 0;
     padding: 0;
-    background: #ff7621;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	width: 100%;
+	height: 100%;
 }
 
-#portfolio .portfolio-item {
-    margin: 0 0 15px;
-    right: 0;
+p {
+	color: black;
+	opacity: 1;
+	font-family: 'Verdana';
+	font-size:18px;
+	line-height: 22px;
+	
+}
+.top-nav {
+    padding-top: 50px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
+.sophie-label {
+    list-style-type: none;
+    font-family: 'Verdana';
+    font-size:40px;
+    display: inline-block;
+    vertical-align:middle;
+    padding-left: 50px;
+    padding-right: 20px;    
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
-    background: rgba(36, 91, 250, 0.9);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all ease 0.5s;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
+.orange-icon {
+    height: 50px;
+    display: inline-block;
+	vertical-align:middle;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+.square {
+	width: 70%;
+	height: 40%;
+	background-color:rgba(255,255,255, 0.5);
+	z-index: 9999;
+	position: absolute;
+	border-radius: 10px 100px / 120px;
+	text-align:center;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    font-size: 20px;
-    text-align: center;
-    top: 50%;
-    margin-top: -12px;
-    color: white;
+.centered {
+	position: fixed;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
+@keyframes oranges-falling-one {
+	0% {
+		top: -30%
+	}
+	100% {
+		top: 90%
+	}
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-    margin: 0;
+@keyframes oranges-falling-two {
+	0% {
+		top: -40%
+	}
+	100% {
+		top: 80%
+	}
 }
 
-#portfolio * {
-    z-index: 2;
+@keyframes oranges-falling-three {
+	0% {
+		top: -30%
+	}
+	100% {
+		top: 70%
+	}
 }
 
-.portfolio-modal .modal-content {
-    border-radius: 0;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: none;
-    min-height: 100%;
-    padding: 100px 0;
-    text-align: center;
+.orange-layer-one {
+	position: absolute;
+	top: -30%;
+	z-index: 9000;
+	user-select: none;
+	cursor: default;
+	animation-name: oranges-falling-one;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-play-state: running;
+	animation-iteration-count: 1;
 }
 
-.portfolio-modal .modal-content h2 {
-    margin: 0;
-    font-size: 3em;
+.orange-layer-two {
+	position: absolute;
+	top: -40%;
+	z-index: 9998;
+	user-select: none;
+	cursor: default;
+	animation-name: oranges-falling-two;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-play-state: running;
+	animation-iteration-count: 1;
 }
 
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+.orange-layer-three {
+	position: absolute;
+	top: -30%;
+	z-index: 9999;
+	user-select: none;
+	cursor: default;
+	animation-name: oranges-falling-three;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	animation-play-state: running;
+	animation-iteration-count: 1;
 }
 
-.portfolio-modal .modal-content .item-details {
-    margin: 30px 0;
+.orange-layer-one:nth-of-type(0) {
+	left: 1%;
+	-webkit-animation-delay: 0s, 0s;
+	animation-delay: 0s, 0s
 }
 
-.portfolio-modal .close-modal {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
+.orange-layer-one:nth-of-type(1) {
+	left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+	animation-delay: 1s, 1s
 }
 
-.portfolio-modal .close-modal:hover {
-    opacity: 0.3;
+.orange-layer-one:nth-of-type(2) {
+	left: 20%;
+    -webkit-animation-delay: 3s, .5s;
+	animation-delay: 3s, .5s
 }
 
-.portfolio-modal .close-modal .lr {
-    height: 75px;
-    width: 1px;
-    margin-left: 35px;
-    background-color: #2C3E50;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    /* IE 9 */
-    -webkit-transform: rotate(45deg);
-    /* Safari and Chrome */
-    z-index: 1051;
+.orange-layer-one:nth-of-type(3) {
+	left: 30%;
+	-webkit-animation-delay: 4s, 2s;
+	animation-delay: 4s, 2s
 }
 
-.portfolio-modal .close-modal .lr .rl {
-    height: 75px;
-    width: 1px;
-    background-color: #2C3E50;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    /* Safari and Chrome */
-    z-index: 1052;
+.orange-layer-one:nth-of-type(4) {
+	left: 40%;
+	-webkit-animation-delay: 2s, 2s;
+	animation-delay: 2s, 2s
 }
 
-.portfolio-modal .modal-backdrop {
-    opacity: 0;
-    display: none;
+.orange-layer-one:nth-of-type(5) {
+	left: 50%;
+	-webkit-animation-delay: 8s, 3s;
+	animation-delay: 8s, 3s
 }
+
+.orange-layer-one:nth-of-type(6) {
+	left: 60%;
+	-webkit-animation-delay: 5s, 2s;
+	animation-delay: 5s, 2s
+}
+
+.orange-layer-one:nth-of-type(7) {
+	left: 70%;
+	-webkit-animation-delay: 2.5s, 1s;
+	animation-delay: 2.5s, 1s
+}
+
+.orange-layer-one:nth-of-type(8) {
+	left: 80%;
+	-webkit-animation-delay: 1s, 0s;
+	animation-delay: 1s, 0s
+}
+
+.orange-layer-one:nth-of-type(9) {
+	left: 90%;
+	-webkit-animation-delay: 3s, 1.5s;
+	animation-delay: 3s, 1.5s
+}
+
+/* second row */
+.orange-layer-two:nth-of-type(1) {
+	left: 5%;
+	-webkit-animation-delay: 5s, 1s;
+	animation-delay: 5s, 1s
+}
+
+.orange-layer-two:nth-of-type(2) {
+	left: 35%;
+	-webkit-animation-delay: 7s, .3s;
+	animation-delay: 7s, .3s
+}
+
+.orange-layer-two:nth-of-type(3) {
+	left: 85%;
+	-webkit-animation-delay: 5s, 1s;
+	animation-delay: 5s, 1s
+}
+
+.orange-layer-two:nth-of-type(4) {
+	left: 75%;
+	-webkit-animation-delay: 3s, 3s;
+	animation-delay: 3s, 3s
+}
+
+.orange-layer-two:nth-of-type(5) {
+	left: 65%;
+	-webkit-animation-delay: 6s, 3s;
+	animation-delay: 6s, 3s
+}
+
+.orange-layer-two:nth-of-type(6) {
+	left: 15%;
+	-webkit-animation-delay: 4s, 6s;
+	animation-delay: 4s, 6s
+}
+
+/* third row */
+.orange-layer-three:nth-of-type(1) {
+	left: 10%;
+	-webkit-animation-delay: 7s, 3s;
+	animation-delay: 7s, 3s
+}
+
+.orange-layer-three:nth-of-type(2) {
+	left: 80%;
+	-webkit-animation-delay: 7s, 7s;
+	animation-delay: 7s, 7s
+}
+
