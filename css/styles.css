@@ -7,13 +7,17 @@ body {
 }
 
 p {
-	color: black;
+	color: #000000;
 	opacity: 1;
 	font-family: 'Verdana';
 	font-size:18px;
 	line-height: 22px;
-	
 }
+
+a:link, a:visited, a:hover, a:focus, a:active {
+	color:#000000;
+  }
+  
 .top-nav {
     padding-top: 50px;
 }
@@ -46,7 +50,7 @@ p {
 
 .centered {
 	position: fixed;
-  	top: 40%;
+  	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
